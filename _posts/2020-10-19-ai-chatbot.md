@@ -35,11 +35,6 @@ Google提供了现成的universal-sentence-encoder模型（USE）：[https://tfh
 
 源码：[https://github.com/hurongliang/ai-chatbot](https://github.com/hurongliang/ai-chatbot)
 
-# Demo
-
-搭建了一个简单应用，有兴趣的同学体验下。
-
-地址：[https://chatbot.hurongliang.com/](https://chatbot.hurongliang.com/)
 
 # 参考及引用 
 

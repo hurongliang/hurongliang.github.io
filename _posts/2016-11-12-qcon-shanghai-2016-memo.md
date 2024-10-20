@@ -9,7 +9,7 @@ excerpt: 一整天 一个会议厅 一个主题：微服务架构，我们该如
 
 一整天 一个会议厅 一个主题：微服务架构，我们该如何实践
 
-<img src="{{ site.url }}/img/20161125/0.jpeg" width="600" />
+<img src="{{ site.url }}/img/20161125/0.jpeg" alt="讲课" width="600" />
 
 # 《微服务：模式与实践》
 QCon联合主席Wesley Reisz的演讲主题是《微服务：模式与实践》，从宏观角度介绍微服务的重要概念和实践原则。
@@ -22,7 +22,7 @@ Adrian Cockcroft对微服务的表述：loosely couped service oriented architec
 
 微服务领域常设计一个模型即scale cube（伸缩魔方）
 
-<img src="{{ site.url }}/img/20161125/1.png" width="400" />
+<img src="{{ site.url }}/img/20161125/1.png" alt="Scale Cube" width="400" />
 
 扩展一个应用有三个方向：
 - X轴：通过复制扩展。常用于业务功能的扩展。运行应用的多个实例，配合负载均衡策略。缺点是多个应用对同一份数据进行访问增大了内存资源消耗，并没有解决系统复杂度问题。
@@ -103,7 +103,7 @@ SPINE模型：http://spinemodel.info/explanation/introduction/
 
 他们的数据采集架构
 
-<img src="{{ site.url }}/img/20161125/2.png" width="400" />
+<img src="{{ site.url }}/img/20161125/2.png" alt="数据采集架构" width="400" />
 
 介绍了日志序列化协力的差异 JSON VS BINARY
 
@@ -120,7 +120,7 @@ SPINE模型：http://spinemodel.info/explanation/introduction/
 
 日志监控链路
 
-<img src="{{ site.url }}/img/20161125/3.png" width="400" />
+<img src="{{ site.url }}/img/20161125/3.png" alt="日志监控链路" width="400" />
 
 # 《滴滴代驾微服务架构演进》
 滴滴代驾事业部架构师赵伟介绍了滴滴代驾微服务的架构设计
@@ -143,7 +143,7 @@ SPINE模型：http://spinemodel.info/explanation/introduction/
 
 滴滴代驾微服务架构图:
 
-<img src="{{ site.url }}/img/20161125/4.png" width="400" />
+<img src="{{ site.url }}/img/20161125/4.png" alt="滴滴代驾微服务架构" width="400" />
 
 介绍了微服务降级措施
 
@@ -157,13 +157,13 @@ SPINE模型：http://spinemodel.info/explanation/introduction/
 故障降级
 - 设计专门的降级策略服务，微服务实时同步策略，业务代码埋点，if else 判断降级并做降级处理
 
-<img src="{{ site.url }}/img/20161125/5.png" width="400" />
+<img src="{{ site.url }}/img/20161125/5.png" alt="降级策略" width="400" />
 
 - 客户端降级，关键服务允许降级来保证可用性
 
 异步请求：适用于耗时长的服务
 
-<img src="{{ site.url }}/img/20161125/6.png" width="400" />
+<img src="{{ site.url }}/img/20161125/6.png" alt="客户端降级" width="400" />
 
 # 《电商 CRM 的微服务重构实践》
 阿里巴巴高级技术专家介绍微服务系统改造的实践
@@ -221,7 +221,7 @@ SPINE模型：http://spinemodel.info/explanation/introduction/
 
 微服务决策推导
 
-<img src="{{ site.url }}/img/20161125/7.png" width="400" />
+<img src="{{ site.url }}/img/20161125/7.png" alt="决策推导" width="400" />
 
 持续集成交付和容错
 
@@ -231,7 +231,7 @@ SPINE模型：http://spinemodel.info/explanation/introduction/
 
 数据闭环
 
-<img src="{{ site.url }}/img/20161125/8.png" width="400" />
+<img src="{{ site.url }}/img/20161125/8.png" alt="数据闭环" width="400" />
 
 # 《服务框架 Pigeon 的设计与实现》
 大众点评吴湘介绍了他们开源的服务框架Pigeon以及一些微服务实践
@@ -246,7 +246,7 @@ Pigeon包含了比较完善的微服务框架必须的元素如：
 - 服务隔离：服务端监控每个接口健康度（如超时情况），将不健康的服务排入慢线程池直到恢复。为关键服务提供单独线程池。
 - 服务降级：提供多种降级策略，降级结果可以是直接返回默认值，抛异常，返回mock对象。
 
-<img src="{{ site.url }}/img/20161125/9.png" width="400" />
+<img src="{{ site.url }}/img/20161125/9.png" alt="pigeon" width="400" />
 
 - 多IDC支持。优先选择本地IDC服务，或者设置比例。
 - 内置http服务：查看服务状态。提供服务测试能力。
@@ -314,19 +314,19 @@ Pigeon包含了比较完善的微服务框架必须的元素如：
 
 介绍了系统服务架构演进
 
-<img src="{{ site.url }}/img/20161125/10.png" width="400" />
+<img src="{{ site.url }}/img/20161125/10.png" alt="演进" width="400" />
 
 介绍了华为微服务架构视图
 
-<img src="{{ site.url }}/img/20161125/11.png" width="400" />
+<img src="{{ site.url }}/img/20161125/11.png" alt="微服务架构" width="400" />
 
 中间的微服务框架是一个完整微服务体系需要具备的模块
 
 微服务的设计
 
-<img src="{{ site.url }}/img/20161125/12.png" width="400" />
+<img src="{{ site.url }}/img/20161125/12.png" alt="模块1" width="400" />
 
-<img src="{{ site.url }}/img/20161125/13.png" width="400" />
+<img src="{{ site.url }}/img/20161125/13.png" alt="模块2" width="400" />
 
 拆分原则：围绕业务功能进行垂直和水平拆分，大小粒度是难点。
 - 围绕业务模型设计微服务
@@ -338,9 +338,9 @@ Pigeon包含了比较完善的微服务框架必须的元素如：
 
 微服务开发测试
 
-<img src="{{ site.url }}/img/20161125/14.png" width="400" />
+<img src="{{ site.url }}/img/20161125/14.png" alt="测试1" width="400" />
 
-<img src="{{ site.url }}/img/20161125/15.png" width="400" />
+<img src="{{ site.url }}/img/20161125/15.png" alt="测试1" width="400" />
 
 开发构建原则：接口先行，语言中立，并行开发，提升产能；自动测试，持续构建，持续集成联调
 - 接口先定义，确保能并行开发
@@ -349,9 +349,9 @@ Pigeon包含了比较完善的微服务框架必须的元素如：
 
 部署
 
-<img src="{{ site.url }}/img/20161125/16.png" width="400" />
+<img src="{{ site.url }}/img/20161125/16.png" alt="部署1" width="400" />
 
-<img src="{{ site.url }}/img/20161125/17.png" width="400" />
+<img src="{{ site.url }}/img/20161125/17.png" alt="部署2" width="400" />
 
 部署原则：独立交付件，独立生命周期管理，基础设施自动化，部署自动化并行化
 - 微服务应该能独立部署发布，生命周期独立
@@ -360,9 +360,9 @@ Pigeon包含了比较完善的微服务框架必须的元素如：
 
 微服务治理和运维
 
-<img src="{{ site.url }}/img/20161125/18.png" width="400" />
+<img src="{{ site.url }}/img/20161125/18.png" alt="运维1" width="400" />
 
-<img src="{{ site.url }}/img/20161125/19.png" width="400" />
+<img src="{{ site.url }}/img/20161125/19.png" alt="运维2" width="400" />
 
 服务自治，精益化管理，在线治理，实时生效
 
@@ -385,19 +385,19 @@ Pigeon包含了比较完善的微服务框架必须的元素如：
 
 一些新的关注点：
 
-<img src="{{ site.url }}/img/20161125/20.png" width="400" />
+<img src="{{ site.url }}/img/20161125/20.png" alt="关注点" width="400" />
 
 从微服务到serverless的演进
 
-<img src="{{ site.url }}/img/20161125/21.png" width="400" />
+<img src="{{ site.url }}/img/20161125/21.png" alt="从微服务到serverless的演进" width="400" />
 
 API  + 网关
 
-<img src="{{ site.url }}/img/20161125/22.png" width="400" />
+<img src="{{ site.url }}/img/20161125/22.png" alt="API  + 网关" width="400" />
 
 CI/CD
 
-<img src="{{ site.url }}/img/20161125/23.png" width="400" />
+<img src="{{ site.url }}/img/20161125/23.png" alt="CI/CD" width="400" />
 
 最后的建议
 - 微服务是系统工程，需要技术，管理协同并进，技术框架，组织结构，业务流程要配套

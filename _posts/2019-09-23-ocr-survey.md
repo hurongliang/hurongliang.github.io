@@ -29,7 +29,7 @@ OCR大体上分两个步骤：文字检测 + 文字预处理 + 文字识别。
 
 文字检测的作用是发现文字在图片中的位置。通常用于在自然场景的图片里检测文字位置，如下图：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/1.png" height="200"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/1.png" alt="文字检测" height="200"/></div>
 
 文字识别是将检测到的文字图像识别成二进制字符。
 
@@ -88,7 +88,7 @@ OCR大体上分两个步骤：文字检测 + 文字预处理 + 文字识别。
 
 1.  将灰度图每个像素的RGB值转换为曲线图，比如：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/5.png" height="200"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/5.png" alt="将灰度图每个像素的RGB值转换为曲线图" height="200"/></div>
 
 2. x轴从0到255，范围覆盖灰度RGB所有可能
 3. y轴表示灰度图中x轴所在位置的RGB像素有几个，
@@ -109,11 +109,11 @@ OCR大体上分两个步骤：文字检测 + 文字预处理 + 文字识别。
 
 消除曲线图里的毛刺，消除波峰，可以将下面的图1变为图2
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/6.png" height="200"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/6.png" alt="消除曲线图里的毛刺1" height="200"/></div>
 
 图一
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/7.png" height="200"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/7.png" alt="消除曲线图里的毛刺2" height="200"/></div>
 
 图二
 
@@ -153,11 +153,11 @@ OCR大体上分两个步骤：文字检测 + 文字预处理 + 文字识别。
 
 得到曲线图：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/8.png" height="200"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/8.png" alt="曲线图" height="200"/></div>
 
 做平滑：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/9.png" height="200"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/9.png" alt="做平滑" height="200"/></div>
 
 找到波谷，并从波谷切分，就会得到柱状图。
 
@@ -196,7 +196,7 @@ Tj
 
 业界将目光移向了根据挑战的领域，将场景文本识别（文字检测+文字识别）作为研究课题。
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/10.png" height="200"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/10.png" alt="场景文本识别" height="200"/></div>
 
 利用深度学习，手写体识别已经有较大进步，但手写文字识别仍然是一个有挑战的课题。
 
@@ -221,7 +221,7 @@ Tj
 
 典型网络结构：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20190923/11.png" height="600"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20190923/11.png" alt="典型网络结构" height="600"/></div>
 
 ## 端到端CNN+RNN+CTC算法
 

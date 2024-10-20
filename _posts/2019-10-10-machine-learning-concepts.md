@@ -61,7 +61,7 @@ excerpt: 神经网络相关的基础知识
 
 `复合函数`简单讲就是函数套函数，自变量也是函数的函数。比如：y=f(x), z=g(y)，则z=f(g(x))就是一个符合函数，其中x是自变量，y是中间变量，x是因变量。复合函数的一个例子：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/1.png" height="80"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/1.png" alt="复合函数" height="80"/></div>
 
 # 方程
 
@@ -75,11 +75,11 @@ excerpt: 神经网络相关的基础知识
 
 `方程组`是将两个及以上的方程的组合在一起，使其中的未知数同时满足每个方程。如：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/2.png" height="80"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/2.png" alt="方程组" height="80"/></div>
 
 用于描述因变量和自变量关系的多个函数组成`参数方程`。通常我们用参数方程描述空间形状，如原的参数方程：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/3.png" height="80"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/3.png" alt="参数方程" height="80"/></div>
 
 # 向量
 
@@ -97,11 +97,11 @@ excerpt: 神经网络相关的基础知识
 
 在平面内画两条互相垂直，并且有公共原点的数轴。其中横轴为`X轴`，纵轴为`Y轴`。这样我们就说在平面上建立了平面直角坐标系，简称`直角坐标系`。如图：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/4.png" height="180"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/4.png" alt="坐标系" height="180"/></div>
 
 在平面上取一定点o，称为`极点`，由o出发的一条射线ox，称为`极轴`。再取定一个长度单位，通常规定角度取逆时针方向为正。这样，平面上任一点P的位置就可以用线段OP的长度ρ以及从Ox到OP的角度θ极坐标系极坐标系来确定，有序数对（ρ，θ）就称为P点的`极坐标`，记为P（ρ，θ）；ρ称为P点的`极径`，θ称为P点的`极角`。如图：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/5.png" height="180"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/5.png" alt="极坐标" height="180"/></div>
 
 # 导数
 
@@ -109,7 +109,7 @@ excerpt: 神经网络相关的基础知识
 
 导数公式：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/6.png" height="40"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/6.png" alt="导数" height="40"/></div>
 
 一个函数在某一点的导数描述了这个函数在这一点附近的`变化率`。
 
@@ -127,15 +127,15 @@ excerpt: 神经网络相关的基础知识
 
 全导数的参数方程：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/7.png" height="120"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/7.png" alt="全导数的参数方程" height="120"/></div>
 
 方向导数的参数方程：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/8.png" height="120"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/8.png" alt="方向导数的参数方程" height="120"/></div>
 
 偏导数的参数方程：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/9.png" height="120"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/9.png" alt="偏导数的参数方程" height="120"/></div>
 
 # 概率统计
 
@@ -179,7 +179,7 @@ excerpt: 神经网络相关的基础知识
 
 一个典型的神经网络包含三个层次，第一层为`输入层`，第二次为`中间层`，也叫`隐藏层`，第三层是`输出层`。
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/10.png" height="400"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/10.png" alt="神经网络" height="400"/></div>
 
 一般输入层和输出层的节点数是固定的。
 
@@ -189,7 +189,7 @@ excerpt: 神经网络相关的基础知识
 
 神经元节点模型：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/11.png" height="400"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/11.png" alt="神经元节点模型" height="400"/></div>
 
 x代表输入，可能有多个输入。w代表每个输入的`权重`，b为`截距`，通常为常量，sum表示将多个权重求和。sgn是`激活函数`。z是节点输出。
 
@@ -199,7 +199,7 @@ x代表输入，可能有多个输入。w代表每个输入的`权重`，b为`�
 
 通常我们这样定义损失函数：
 
-<div style="text-align: center"><img src="{{ site.url }}/img/20191010/12.png" height="40"/></div>
+<div style="text-align: center"><img src="{{ site.url }}/img/20191010/12.png" alt="损失函数" height="40"/></div>
 
 模型训练的目标就是让损失函数最小。而常用的方法就是求导，但是由于参数较多，计算导数为0的计算量太大，所有通常使用梯度下降算法，及每次计算当前参数的梯度，然后然参数沿着梯度的反方向移动一小段距离后再计算梯度，知道梯度最小。由于神经网咯结构复杂，计算梯度通常采用反向传播算法，具体可以看这边文章：[《一文弄懂神经网络中的反向传播法——BackPropagation》](https://www.cnblogs.com/charlotte77/p/5629865.html)。
 
